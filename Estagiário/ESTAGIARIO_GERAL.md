@@ -20,7 +20,7 @@ Conforme informado durante a sua entrevista, este desafio tem o objetivo de test
  - Explique o seu raciocínio de maneira escrita. Mesmo que seu código não funcione 100% corretamente, a ideia por trás da lógica é o mais importante.
  - Apesar do trabalho equipe ser importante, procure fazer as questões __sozinho__. Códigos copiados de outros candidatos (atuais ou passados) podem ser facilmente identificados!
 
- ### Questão 1 - Linha de Transmissão de Fibonacci (1,5 pontos)
+### Questão 1 - Linha de Transmissão de Fibonacci (1,5 pontos)
 
 <div style="text-align: justify"> 
 Um engenheiro civil e um engenheiro eletricista ficaram encarregados de um projeto com o objetivo de construir uma linha de transmissão conectando Mordor e Tangamandápio. Os engenheiros recentemente chegaram de uma viagem da Itália, onde além de se decepcionar com a culinária local, ficaram encantados pelos cientistas e matemáticos italianos. Para homenagear [Fibonacci](https://en.wikipedia.org/wiki/Fibonacci), decidiram contra diversas recomendações em espaçar as torres de acordo com a [sequência de mesmo nome](https://pt.wikipedia.org/wiki/Sequ%C3%AAncia_de_Fibonacci). Para isso, pediram à você que fizesse um programa que indique a posição das torres de acordo com o total de torres que devem ser colocadas. 
@@ -33,7 +33,9 @@ A única exigência dos engenheiros é que as duas primeiras torres fiquem nas p
 
 Desenvolva uma função `ColocarTorres` que receba um número inteiro positivo representando o total de torres a serem colocadas e retorne suas posições, separadas por um caractere em branco.
 </div>
-#### Dica:
+
+#### Dica
+
    - `ColocarTorres(0) => 0`
    - `ColocarTorres(1) => 0`
    - `ColocarTorres(2) => 0 1`
