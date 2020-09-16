@@ -34,9 +34,9 @@ A única exigência dos engenheiros é que as duas primeiras torres fiquem nas p
 Desenvolva uma função `ColocarTorres` que receba um número inteiro positivo representando o total de torres a serem colocadas e retorne suas posições, separadas por um caractere em branco.
 </div>
 #### Dica:
-- `ColocarTorres(0) => 0`
-- `ColocarTorres(1) => 0`
-- `ColocarTorres(2) => 0 1`
+   - `ColocarTorres(0) => 0`
+   - `ColocarTorres(1) => 0`
+   - `ColocarTorres(2) => 0 1`
 
 ##### Ponto Extra (1,0 pontos):
 <div style="text-align: justify">
