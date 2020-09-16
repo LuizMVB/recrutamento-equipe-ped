@@ -22,8 +22,31 @@ Conforme informado durante a sua entrevista, este desafio tem o objetivo de test
 
  ### Questão 1 - Linha de Transmissão de Fibonacci (1,5 pontos)
 
-Um engenheiro civil e um engenheiro eletricista ficaram encarregados de um projeto com o objetivo de construir uma linha de transmissão conectando Mordor e Tangamandápio. Os engenheiros recentemente chegaram de uma viagem da Itália, onde além de se decepcionar com a culinária local, ficaram encantados pelos cientistas e matemáticos italianos. Para homenagear [Fibonacci](https://en.wikipedia.org/wiki/Fibonacci), decidiram contra diversas recomendações em espaçar as torres de acordo com a [sequência de mesmo nome](https://pt.wikipedia.org/wiki/Sequ%C3%AAncia_de_Fibonacci). Para isso, pediram à você que fizesse um programa que indique a posição das torres de acordo com o total de torres que devem ser colocadas.
+<div style="text-align: justify"> 
+Um engenheiro civil e um engenheiro eletricista ficaram encarregados de um projeto com o objetivo de construir uma linha de transmissão conectando Mordor e Tangamandápio. Os engenheiros recentemente chegaram de uma viagem da Itália, onde além de se decepcionar com a culinária local, ficaram encantados pelos cientistas e matemáticos italianos. Para homenagear [Fibonacci](https://en.wikipedia.org/wiki/Fibonacci), decidiram contra diversas recomendações em espaçar as torres de acordo com a [sequência de mesmo nome](https://pt.wikipedia.org/wiki/Sequ%C3%AAncia_de_Fibonacci). Para isso, pediram à você que fizesse um programa que indique a posição das torres de acordo com o total de torres que devem ser colocadas. 
+</div>
 
 ![Torres de Transmissão](https://imagens.ebc.com.br/4B5E4Np9_7f33aka4jwwKE38cuY=/1170x700/smart/https://agenciabrasil.ebc.com.br/sites/default/files/thumbnails/image/agencia_brasil170912_mca7686.jpg?itok=c5ZDE7sY "Torres de Transmissão")
+
+<div style="text-align: justify">
+A única exigência dos engenheiros é que as duas primeiras torres fiquem nas posições zero (0) e um (1) respectivamente.
+
+Desenvolva uma função `ColocarTorres` que receba um número inteiro positivo representando o total de torres a serem colocadas e retorne suas posições, separadas por um caractere em branco.
+</div>
+#### Dica:
+- `ColocarTorres(0) => 0`
+- `ColocarTorres(1) => 0`
+- `ColocarTorres(2) => 0 1`
+
+##### Ponto Extra (1,0 pontos):
+<div style="text-align: justify">
+Para fazer com que a função se torne mais geral e aplicável à mais casos, os engenheiros pediram que você substitua a entrada da função do número de torres para a distância em quilômetros entre duas localidades quaisquer. Considerando que as posições das torres são mostradas também em quilômetros, calcule o número de torres e suas posições.
+</div>
+
+
+
+
+
+
 
 
