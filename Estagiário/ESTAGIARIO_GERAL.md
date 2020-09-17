@@ -45,7 +45,7 @@ Conforme informado durante a sua entrevista, este desafio tem o objetivo de test
       - No assunto coloque: SEU NOME - DESAFIO ESTAGIÁRIO - CÓDIGO NO FINAL DO DOCUMENTO;
       - No corpo do email, coloque informações que julgar necessárias para a avaliação (não é obrigatório!).
 
-### Questão 1 - Linha de Transmissão de Fibonacci (1,5 pontos)
+### Questão 1 - Linha de Transmissão de Fibonacci (1,0 pontos)
 
 Um engenheiro civil e um engenheiro eletricista ficaram encarregados de um projeto com o objetivo de construir uma linha de transmissão conectando Mordor e Tangamandápio. Os engenheiros recentemente chegaram de uma viagem da Itália, onde além de se decepcionar com a culinária local, ficaram encantados pelos cientistas e matemáticos italianos. Para homenagear [Fibonacci](https://en.wikipedia.org/wiki/Fibonacci), decidiram contra diversas recomendações em espaçar as torres de acordo com a [sequência de mesmo nome](https://pt.wikipedia.org/wiki/Sequ%C3%AAncia_de_Fibonacci). Para isso, pediram à você que fizesse um programa que indique a posição das torres de acordo com o total de torres que devem ser colocadas. 
 
@@ -55,7 +55,7 @@ A única exigência dos engenheiros é que as duas primeiras torres fiquem nas p
 
 Desenvolva uma função `ColocarTorres` que receba um número inteiro positivo representando o total de torres a serem colocadas e retorne suas posições, separadas por um caractere em branco.
 
-#### Dica
+#### Dica:
 
    - `ColocarTorres(0) => 0`
    - `ColocarTorres(1) => 0`
@@ -67,7 +67,7 @@ Para fazer com que a função se torne mais geral e aplicável à mais casos, os
 ##### Arquivo de Entrada:
 A primeira linha consiste no número de testes a serem rodados. As linhas subsequentes contém as entradas para cada um dos testes.
 
-### Questão 2 - Número de Enrolamentos Perfeito (1,5 pontos)
+### Questão 2 - Número de Enrolamentos Perfeito (1,0 pontos)
 Um engenheiro eletricista responsável por otimizar a construção de geradores elétricos para utilização em plantas de geração térmica descobriu uma nova metodologia para definir o número de voltas que os condutores dos enrolamentos do gerador devem possuir. Após assistir ao filme [Uma Mente Brilhante](https://en.wikipedia.org/wiki/A_Beautiful_Mind_(film)) em um fim de semana pacato, o engenheiro decidiu que o número de voltas dos enrolamentos deveria ser um __número__ __perfeito__. 
 
 ![Gerador e seus enrolamentos](https://www.asiantec.co.id/tinymce_uploaded/product/generator/gen_2.jpg)
@@ -85,7 +85,7 @@ Na semana seguinte, o engenheiro assistiu a série [Dark](https://dark.netflix.i
 ##### Arquivo de Entrada:
 A primeira linha consiste no número de testes a serem rodados. As linhas subsequentes contém as entradas para cada um dos testes.
 
-### Questão 3 - Número de Série dos Transformadores (SQL) (2,0 pontos)
+### Questão 3 - Número de Série dos Transformadores (SQL) (1,5 pontos)
 Elian, um desenvolvedor especialista em bancos de dados precisa construir uma aplicação que liste os números de série dos transformadores de uma empresa de transmissão de energia. Porém, a organização dos bancos de dados da empresa em questão não é das melhores e além de ficarem em uma tabela separada, os números de série que possuem um formato específico na realidade estão salvos sem nenhum formato. Como Elian está exageradamente atarefado com a construção do backend da solução, pediu à você que selecione os números de série associados a cada transformador e aplique uma máscara nos valores, para que fiquem formatados corretamente. A estrutura das tabelas é a seguinte:
 
    - Tabela "tb_transformadores":
@@ -106,7 +106,7 @@ Elian, um desenvolvedor especialista em bancos de dados precisa construir uma ap
 O formato do número de série segue a máscara "00.0000.0000-0000/00".
 Escreva uma consulta SQL que atualize os números de série dos transformadores de maneira que sigam o padrão fornecido pela máscara.
 
-#### Dica
+#### Dica:
  - A coluna `id_transformador` é uma chave estrangeira para a tabela `tb_transformadores`. 
 
 ##### Ponto Extra (0,5 ponto):
@@ -121,7 +121,7 @@ As sequências presentes na base são formadas pelas letras A, B, C e N (ex. `AB
 
 ![Gerador e seus enrolamentos](https://s.dicio.com.br/palindromo.png)
 
-#### Dica
+#### Dica:
  - Sequências de somente um caractere não são consideradas palíndromos;
  - Avalie se as sequências são válidas.
 
@@ -131,14 +131,32 @@ A primeira linha consiste no número de testes a serem rodados. As linhas subseq
 ### Questão 5 - Numeração Ineficiente (2,0 pontos)
 Flábio Loubão, de forma a entender melhor o processo de um cliente durante a fase de prospecção de novos projetos decidiu que seria uma boa ideia passar um dia no setor a ser contemplado pelo projeto para entender melhor o dia a dia dos funcionários. Após um voo atrasado e uma revista não esperada na segurança do aeroporto, Flábio chegou no cliente e imediatamente percebeu uma forma de melhorar o processo. Na gestão do estoque dos equipamentos de medição da empresa, as caixas dos medidores deveriam ser marcadas com número sequenciais. A marcação é feita utilizando adesivos, com os dígitos. A separação dos adesivos era feita "on-demand", conforme os equipamentos eram colocados nas caixas, de maneira ineficiente. Os funcionários sabiam no início do dia o número da primeira e última caixa a serem numeradas. Dessa maneira, Flábio pediu que você criasse uma função `Digitos(a, b)` que receba o número da primeira e última caixa (inteiros positivos) e informe aos funcionários quantos adesivos de cada dígito serão necessários para um dia. Por exemplo, se as caixas do dia forem númeradas de `1` a `10`, a função deveria retornar `1 2 1 1 1 1 1 1 1`, ou seja, um dígito zero, dois dígitos um, um dígito dois e assim por diante.
 
-#### Dica
+#### Dica:
  - Teste sua função com números grandes e pequenos.
 
 ##### Arquivo de Entrada:
 A primeira linha consiste no número de testes a serem rodados. As linhas subsequentes contém as entradas para cada um dos testes.
 
+### Questão 6 - Aluguel na Pandemia (Ciência de Dados) (1,5 pontos)
+Com a chegada da pandemia e o advendo do home office, a equipe de P&D resolveu alugar um imóvel para que pudessem trabalhar juntos na quarentena. Maurécio Magalhões, decidido em encontrar um bom imóvel para dividir com seus estimados colegas de trabalho, obteve uma base de dados dos imóvel disponíveis para aluguel na cidade do Rio de Janeiro. Maurécio então pediu à você que analisasse os dados desta base e encontrasse relações entre as diversas características dos imóvel (ex. Quartos vs. Valor) mostrando as tendências através de gráficos e indicadores. Ainda, Magalhões pediu que você propusesse uma forma de determinar o valor dos imóveis baseado em suas demais características (ou seja, se você encontrasse um imóvel que não está na lista, qual seria um valor justo para ele?). Maurécio gostaria que além das funções utilizadas para manipular os dados, você mostre à ele um relatório (simples) com sua análise contendo os gráficos e outras informações relevantes.
+
+##### Ponto Extra (0,5 ponto):
+Que tipos de dados não presentes na base você acredita que poderiam enriquecer sua análise e contemplar Maurécio Magalhões com uma resposta mais assertiva? Que tipos de dados presentes na base são desnecessários ou não possuem muito impacto em sua análise? Por que? Explique sua proposta e solução.
+
+#### Dica:
+   - Para os relatórios, Magalhões gosta muito dos formatos de arquivo `.pdf` ou `.ipynb`.
 
 
-
+##### Arquivo de Entrada:
+A base dos imóveis está no formato `.csv` e possui as colunas:
+   - Tipo;
+   - Bairro;
+   - Quartos;
+   - Vagas;
+   - Suítes;
+   - Área;
+   - Valor;
+   - Condomínio;
+   - IPTU.
 
 __Código:__ P&D_ESTAG_G_01
