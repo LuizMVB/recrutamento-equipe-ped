@@ -30,6 +30,12 @@ Conforme informado durante a sua entrevista, este desafio tem o objetivo de test
       - Utilização eficiente de recursos específicos de uma determinada linguagem;
       - Criação de uma interface WEB (mesmo que muito simples).
 
+## Envio e Finalização
+1. Na pasta da sua solução, inclua um arquivo `lang.info` que contenha somente uma linha com o nome da linguagem utilizada para solucionar o desafio (exceto a questão nº 3) em letras __MAIÚSCULAS__. Caso tenha sido feita em pseudocódigo, escreva somente `PSEUDO`;
+2. Envio:
+   - Método 1:
+      - Crie um merge request no mesmo repositório onde estas instruções foram obtidas.
+
 ### Questão 1 - Linha de Transmissão de Fibonacci (1,5 pontos)
 
 Um engenheiro civil e um engenheiro eletricista ficaram encarregados de um projeto com o objetivo de construir uma linha de transmissão conectando Mordor e Tangamandápio. Os engenheiros recentemente chegaram de uma viagem da Itália, onde além de se decepcionar com a culinária local, ficaram encantados pelos cientistas e matemáticos italianos. Para homenagear [Fibonacci](https://en.wikipedia.org/wiki/Fibonacci), decidiram contra diversas recomendações em espaçar as torres de acordo com a [sequência de mesmo nome](https://pt.wikipedia.org/wiki/Sequ%C3%AAncia_de_Fibonacci). Para isso, pediram à você que fizesse um programa que indique a posição das torres de acordo com o total de torres que devem ser colocadas. 
