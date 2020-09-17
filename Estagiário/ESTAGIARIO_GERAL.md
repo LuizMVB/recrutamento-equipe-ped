@@ -54,7 +54,7 @@ Crie uma função `Perfeito` que receba um número inteiro positivo e diga se é
 Na semana seguinte, o engenheiro assistiu a série [Dark](https://dark.netflix.io/pt) e agora acredita que tudo está conectado. Por isso, gostaria também de conferir se os divisores de um número perfeito também são perfeitos. Modifique a sua função para que além da definição do número perfeito, diga se seus divisores também são perfeitos. A saída deve ser:
    - "O número {n} é perfeito. Seu(s) divisor(es) {x, y, z} também são perfeitos."
 
-### Questão 3 - Número de Série dos Transformadores (SQL) (2,5 pontos)
+### Questão 3 - Número de Série dos Transformadores (SQL) (2,0 pontos)
 Elian, um desenvolvedor especialista em bancos de dados precisa construir uma aplicação que liste os números de série dos transformadores de uma empresa de transmissão de energia. Porém, a organização dos bancos de dados da empresa em questão não é das melhores e além de ficarem em uma tabela separada, os números de série que possuem um formato específico na realidade estão salvos sem nenhum formato. Como Elian está exageradamente atarefado com a construção do backend da solução, pediu à você que selecione os números de série associados a cada transformador e aplique uma máscara nos valores, para que fiquem formatados corretamente. A estrutura das tabelas é a seguinte:
 
    - Tabela "tb_transformadores":
@@ -90,6 +90,12 @@ As sequências presentes na base são formadas pelas letras A, B, C e N (ex. `AB
 #### Dica
  - Sequências de somente um caractere não são consideradas palíndromos;
  - Avalie se as sequências são válidas.
+
+### Questão 5 - Numeração Ineficiente (2,0 pontos)
+Flábio Loubão, de forma a entender melhor o processo de um cliente durante a fase de prospecção de novos projetos decidiu que seria uma boa ideia passar um dia no setor a ser contemplado pelo projeto para entender melhor o dia a dia dos funcionários. Após um voo atrasado e uma revista não esperada na segurança do aeroporto, Flábio chegou no cliente e imediatamente percebeu uma forma de melhorar o processo. Na gestão do estoque dos equipamentos de medição da empresa, as caixas dos medidores deveriam ser marcadas com número sequenciais. A marcação é feita utilizando adesivos, com os dígitos. A separação dos adesivos era feita "on-demand", conforme os equipamentos eram colocados nas caixas, de maneira ineficiente. Os funcionários sabiam no início do dia o número da primeira e última caixa a serem numeradas. Dessa maneira, Flábio pediu que você criasse uma função `Digitos(a, b)` que receba o número da primeira e última caixa (inteiros positivos) e informe aos funcionários quantos adesivos de cada dígito serão necessários para um dia. Por exemplo, se as caixas do dia forem númeradas de `1` a `10`, a função deveria retornar `1 2 1 1 1 1 1 1 1`, ou seja, um dígito zero, dois dígitos um, um dígito dois e assim por diante.
+
+#### Dica
+ - Teste sua função com números grandes e pequenos.
 
 
 
