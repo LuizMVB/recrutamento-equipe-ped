@@ -6,7 +6,7 @@ Conforme informado durante a sua entrevista, este desafio tem o objetivo de test
 
 ## Regras Gerais
 
- - Procure escolher uma única linguagem para resolver as questões. Dê preferências às seguintes:
+ - Procure escolher uma única linguagem para resolver as questões. Com exceção à questão nº 3, dê preferências às seguintes:
     - Python;
     - C#.NET;
     - Java;
@@ -53,6 +53,36 @@ Crie uma função `Perfeito` que receba um número inteiro positivo e diga se é
 ##### Ponto Extra (1,0 ponto):
 Na semana seguinte, o engenheiro assistiu a série [Dark](https://dark.netflix.io/pt) e agora acredita que tudo está conectado. Por isso, gostaria também de conferir se os divisores de um número perfeito também são perfeitos. Modifique a sua função para que além da definição do número perfeito, diga se seus divisores também são perfeitos. A saída deve ser:
    - "O número {n} é perfeito. Seu(s) divisor(es) {x, y, z} também são perfeitos."
+
+### Questão 3 - Número de Série dos Transformadores (SQL) (2,5 pontos)
+Elian, um desenvolvedor especialista em bancos de dados precisa construir uma aplicação que liste os números de série dos transformadores de uma empresa de transmissão de energia. Porém, a organização dos bancos de dados da empresa em questão não é das melhores e além de ficarem em uma tabela separada, os números de série que possuem um formato específico na realidade estão salvos sem nenhum formato. Como Elian está exageradamente atarefado com a construção do backend da solução, pediu à você que selecione os números de série associados a cada transformador e aplique uma máscara nos valores, para que fiquem formatados corretamente. A estrutura das tabelas é a seguinte:
+
+   - Tabela "tb_transformadores":
+
+   | Coluna     | Tipo         | Exemplo|
+   | -----------| -------------| -------|
+   | id         | numeric (PK) | 171    |
+   | nome       | varchar (255)| t1_A   |
+   | subestacao | char (3)     | TZO    |
+
+   - Tabela "tb_transformadores_num_serie"
+
+   | Coluna           | Tipo         | Exemplo            |
+   | -----------------| -------------| -------------------|
+   | id_transformador | numeric (FK) | 171                |
+   | num_serie        | char (20)    | 8856223677895521   |
+
+O formato do número de série segue a máscara "00.0000.0000-0000/00".
+Escreva uma consulta SQL que atualize os números de série dos transformadores de maneira que sigam o padrão fornecido pela máscara.
+
+#### Dica
+ - A coluna `id_transformador` é uma chave estrangeira para a tabela `tb_transformadores`. 
+
+##### Ponto Extra (0,5 ponto):
+Enquanto você implementava a primeira solução, a empresa recebeu novos transformadores do fornecedor. Dessa vez, os números de série recebidos do fornecedor estão em formatos variados. Alguns valores já possuem a máscara aplicada, porém outros não. Sua tarefa é escrever uma nova consulta SQL que seja capaz de lidar com os valores já formatados.
+
+### Questão 4 - Fases Palíndromas (3,0 pontos)
+Kleyton Verão, um renomado cientista de dados do interior utiliza seu tempo livre para porcurar padrões e sequências em locais inusitados. Ao observar uma base de dados de um projeto do setor de distribuição observou que informações sobre quais fases da rede apresentavam defeito apresentavam um padrão de palíndromo.
 
 
 
