@@ -33,8 +33,16 @@ Conforme informado durante a sua entrevista, este desafio tem o objetivo de test
 ## Envio e Finalização
 1. Na pasta da sua solução, inclua um arquivo `lang.info` que contenha somente uma linha com o nome da linguagem utilizada para solucionar o desafio (exceto a questão nº 3) em letras __MAIÚSCULAS__. Caso tenha sido feita em pseudocódigo, escreva somente `PSEUDO`;
 2. Envio:
-   - Método 1:
-      - Crie um merge request no mesmo repositório onde estas instruções foram obtidas.
+   - Método 1 (1,0 ponto extra):
+      - Crie um merge request no mesmo repositório onde estas instruções foram obtidas;
+      - No título, inclua seu nome, data e hora aproximada do envio;
+      - Na descrição, coloque informações que julgar necessárias para a avaliação (não é obrigatório!);
+      - Envie somente uma request!
+      - Só faça a request após ter certeza que finalizou a solução, requests enviadas posteriormente não serão consideradas.
+   - Método 2 (0,0 pontos):
+      - Envie para o email `rh@radixeng.com.br` com um link para um repositório (GitLab, GitHub, etc) contendo seu projeto ou os arquivos __COMPACTADOS__ em anexo;
+      - No assunto coloque: SEU NOME - DESAFIO ESTAGIÁRIO - CÓDIGO NO FINAL DO DOCUMENTO;
+      - No corpo do email, coloque informações que julgar necessárias para a avaliação (não é obrigatório!).
 
 ### Questão 1 - Linha de Transmissão de Fibonacci (1,5 pontos)
 
@@ -119,3 +127,4 @@ Flábio Loubão, de forma a entender melhor o processo de um cliente durante a f
 
 
 
+__Código:__ P&D_ESTAG_G_01
