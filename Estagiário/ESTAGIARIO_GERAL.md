@@ -63,6 +63,9 @@ Desenvolva uma função `ColocarTorres` que receba um número inteiro positivo r
 ##### Ponto Extra (1,0 pontos):
 Para fazer com que a função se torne mais geral e aplicável à mais casos, os engenheiros pediram que você substitua a entrada da função do número de torres para a distância em quilômetros entre duas localidades quaisquer. Considerando que as posições das torres são mostradas também em quilômetros, calcule o número de torres e suas posições.
 
+##### Arquivo de Entrada:
+A primeira linha consiste no número de testes a serem rodados. As linhas subsequentes contém as entradas para cada um dos testes.
+
 ### Questão 2 - Número de Enrolamentos Perfeito (1,5 pontos)
 Um engenheiro eletricista responsável por otimizar a construção de geradores elétricos para utilização em plantas de geração térmica descobriu uma nova metodologia para definir o número de voltas que os condutores dos enrolamentos do gerador devem possuir. Após assistir ao filme [Uma Mente Brilhante](https://en.wikipedia.org/wiki/A_Beautiful_Mind_(film)) em um fim de semana pacato, o engenheiro decidiu que o número de voltas dos enrolamentos deveria ser um __número__ __perfeito__. 
 
@@ -78,6 +81,9 @@ Crie uma função `Perfeito` que receba um número inteiro positivo e diga se é
 Na semana seguinte, o engenheiro assistiu a série [Dark](https://dark.netflix.io/pt) e agora acredita que tudo está conectado. Por isso, gostaria também de conferir se os divisores de um número perfeito também são perfeitos. Modifique a sua função para que além da definição do número perfeito, diga se seus divisores também são perfeitos. A saída deve ser:
    - "O número {n} é perfeito. Seu(s) divisor(es) {x, y, z} também são perfeitos."
 
+##### Arquivo de Entrada:
+A primeira linha consiste no número de testes a serem rodados. As linhas subsequentes contém as entradas para cada um dos testes.
+
 ### Questão 3 - Número de Série dos Transformadores (SQL) (2,0 pontos)
 Elian, um desenvolvedor especialista em bancos de dados precisa construir uma aplicação que liste os números de série dos transformadores de uma empresa de transmissão de energia. Porém, a organização dos bancos de dados da empresa em questão não é das melhores e além de ficarem em uma tabela separada, os números de série que possuem um formato específico na realidade estão salvos sem nenhum formato. Como Elian está exageradamente atarefado com a construção do backend da solução, pediu à você que selecione os números de série associados a cada transformador e aplique uma máscara nos valores, para que fiquem formatados corretamente. A estrutura das tabelas é a seguinte:
 
@@ -91,10 +97,10 @@ Elian, um desenvolvedor especialista em bancos de dados precisa construir uma ap
 
    - Tabela "tb_transformadores_num_serie"
 
-   | Coluna           | Tipo         | Exemplo            |
-   | -----------------| -------------| -------------------|
-   | id_transformador | numeric (FK) | 171                |
-   | num_serie        | char (20)    | 8856223677895521   |
+   | Coluna           | Tipo            | Exemplo            |
+   | -----------------| ----------------| -------------------|
+   | id_transformador | numeric (FK)    | 171                |
+   | num_serie        | varchar (20)    | 8856223677895521   |
 
 O formato do número de série segue a máscara "00.0000.0000-0000/00".
 Escreva uma consulta SQL que atualize os números de série dos transformadores de maneira que sigam o padrão fornecido pela máscara.
@@ -104,6 +110,9 @@ Escreva uma consulta SQL que atualize os números de série dos transformadores 
 
 ##### Ponto Extra (0,5 ponto):
 Enquanto você implementava a primeira solução, a empresa recebeu novos transformadores do fornecedor. Dessa vez, os números de série recebidos do fornecedor estão em formatos variados. Alguns valores já possuem a máscara aplicada, porém outros não. Sua tarefa é escrever uma nova consulta SQL que seja capaz de lidar com os valores já formatados.
+
+##### Arquivo de Entrada:
+Na pasta contendo os arquivos de entrada, existe um arquivo `.sql` (PostgreSQL) para criação das tabelas. Os dados devem ser populados por você. 
 
 ### Questão 4 - Fases Palíndromas (3,0 pontos)
 Kleyton Verão, um renomado cientista de dados do interior utiliza seu tempo livre para porcurar padrões e sequências em locais inusitados. Ao observar uma base de dados de um projeto do setor de distribuição observou que informações sobre quais fases da rede apresentavam defeito apresentavam um padrão de palíndromo. Uma sequência de caracteres é um palíndromo caso seja idêntica quando lida da esquerda pra direita e da direita pra esquerda. Por exemplo, `ABCBA` é um palíndromo enquanto `ABCNBA` não. Kleyton então pediu que você criasse uma função `Palindromo` que encontre em cada sequência presente na base de dados a maior subsequência que seja um palíndromo. Por exemplo, na sequência `ABCBABN` a maior subsequência que é um palíndromo é `ABCBA` (`BCB` também é um palíndromo, mas não o maior).
@@ -115,13 +124,17 @@ As sequências presentes na base são formadas pelas letras A, B, C e N (ex. `AB
  - Sequências de somente um caractere não são consideradas palíndromos;
  - Avalie se as sequências são válidas.
 
+##### Arquivo de Entrada:
+A primeira linha consiste no número de testes a serem rodados. As linhas subsequentes contém as entradas para cada um dos testes.
+
 ### Questão 5 - Numeração Ineficiente (2,0 pontos)
 Flábio Loubão, de forma a entender melhor o processo de um cliente durante a fase de prospecção de novos projetos decidiu que seria uma boa ideia passar um dia no setor a ser contemplado pelo projeto para entender melhor o dia a dia dos funcionários. Após um voo atrasado e uma revista não esperada na segurança do aeroporto, Flábio chegou no cliente e imediatamente percebeu uma forma de melhorar o processo. Na gestão do estoque dos equipamentos de medição da empresa, as caixas dos medidores deveriam ser marcadas com número sequenciais. A marcação é feita utilizando adesivos, com os dígitos. A separação dos adesivos era feita "on-demand", conforme os equipamentos eram colocados nas caixas, de maneira ineficiente. Os funcionários sabiam no início do dia o número da primeira e última caixa a serem numeradas. Dessa maneira, Flábio pediu que você criasse uma função `Digitos(a, b)` que receba o número da primeira e última caixa (inteiros positivos) e informe aos funcionários quantos adesivos de cada dígito serão necessários para um dia. Por exemplo, se as caixas do dia forem númeradas de `1` a `10`, a função deveria retornar `1 2 1 1 1 1 1 1 1`, ou seja, um dígito zero, dois dígitos um, um dígito dois e assim por diante.
 
 #### Dica
  - Teste sua função com números grandes e pequenos.
 
-
+##### Arquivo de Entrada:
+A primeira linha consiste no número de testes a serem rodados. As linhas subsequentes contém as entradas para cada um dos testes.
 
 
 
