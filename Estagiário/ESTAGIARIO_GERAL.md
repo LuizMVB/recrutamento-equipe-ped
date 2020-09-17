@@ -82,7 +82,14 @@ Escreva uma consulta SQL que atualize os números de série dos transformadores 
 Enquanto você implementava a primeira solução, a empresa recebeu novos transformadores do fornecedor. Dessa vez, os números de série recebidos do fornecedor estão em formatos variados. Alguns valores já possuem a máscara aplicada, porém outros não. Sua tarefa é escrever uma nova consulta SQL que seja capaz de lidar com os valores já formatados.
 
 ### Questão 4 - Fases Palíndromas (3,0 pontos)
-Kleyton Verão, um renomado cientista de dados do interior utiliza seu tempo livre para porcurar padrões e sequências em locais inusitados. Ao observar uma base de dados de um projeto do setor de distribuição observou que informações sobre quais fases da rede apresentavam defeito apresentavam um padrão de palíndromo.
+Kleyton Verão, um renomado cientista de dados do interior utiliza seu tempo livre para porcurar padrões e sequências em locais inusitados. Ao observar uma base de dados de um projeto do setor de distribuição observou que informações sobre quais fases da rede apresentavam defeito apresentavam um padrão de palíndromo. Uma sequência de caracteres é um palíndromo caso seja idêntica quando lida da esquerda pra direita e da direita pra esquerda. Por exemplo, `ABCBA` é um palíndromo enquanto `ABCNBA` não. Kleyton então pediu que você criasse uma função `Palindromo` que encontre em cada sequência presente na base de dados a maior subsequência que seja um palíndromo. Por exemplo, na sequência `ABCBABN` a maior subsequência que é um palíndromo é `ABCBA` (`BCB` também é um palíndromo, mas não o maior).
+As sequências presentes na base são formadas pelas letras A, B, C e N (ex. `ABCABBACNANBC`).
+
+![Gerador e seus enrolamentos](https://s.dicio.com.br/palindromo.png)
+
+#### Dica
+ - Sequências de somente um caractere não são consideradas palíndromos;
+ - Avalie se as sequências são válidas.
 
 
 
