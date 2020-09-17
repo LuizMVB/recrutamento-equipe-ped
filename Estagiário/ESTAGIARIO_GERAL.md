@@ -28,7 +28,8 @@ Conforme informado durante a sua entrevista, este desafio tem o objetivo de test
       - Utilização de orientação à objetos;
       - Criação de testes unitários;
       - Utilização eficiente de recursos específicos de uma determinada linguagem;
-      - Criação de uma interface WEB (mesmo que muito simples).
+      - Criação de uma interface WEB (mesmo que muito simples);
+      - Indicação da complexidade do algoritmo em notação big-O.
 
 ## Envio e Finalização
 1. Na pasta da sua solução, inclua um arquivo `lang.info` que contenha somente uma linha com o nome da linguagem utilizada para solucionar o desafio (exceto a questão nº 3) em letras __MAIÚSCULAS__. Caso tenha sido feita em pseudocódigo, escreva somente `PSEUDO`;
