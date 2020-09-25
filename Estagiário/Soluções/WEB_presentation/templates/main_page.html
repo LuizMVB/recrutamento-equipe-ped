@@ -1,0 +1,62 @@
+{% extends "skeleton.html" %}
+{% block content %}
+    <div class="row">
+        <br><br>
+        <div class="col s6 offset-s3 center brown lighten-5">
+            <table class="centered">
+                <thead>
+                    <tr>
+                        <th>Questão</th>
+                        <th>Link</th>
+                        <th>Pontuação</th>
+                    </tr>
+                </thead>
+        
+                <tbody>
+                    <tr>
+                        <td>01</td>
+                        <td>
+                            <a href="{{ url_for('item_01') }}">Linha de Transmissão de Fibonacci</a>
+                        </td>
+                        <td>1,0 pontos</td>
+                    </tr>
+                    <tr>
+                        <td>02</td>
+                        <td>
+                            <a href="{{ url_for('item_02') }}">Número de Enrolamentos Perfeito</a>
+                        </td>
+                        <td>1,0 ponto</td>
+                    </tr>
+                    <tr>
+                        <td>03</td>
+                        <td>
+                            <a href="{{ url_for('item_03') }}">Número de Série dos Transformadores (SQL)</a>
+                        </td>
+                        <td>1,5 pontos</td>
+                    </tr>
+                    <tr>
+                        <td>04</td>
+                        <td>
+                            <a href="{{ url_for('item_04') }}">Fases Palíndromas </a>
+                        </td>
+                        <td>3,0 pontos</td>
+                    </tr>
+                    <tr>
+                        <td>05</td>
+                        <td>
+                            <a href="{{ url_for('item_05') }}">Numeração Ineficiente</a>
+                        </td>
+                        <td>2,0 pontos</td>
+                    </tr>
+                    <tr>
+                        <td>06</td>
+                        <td>
+                            <a href="{{ url_for('item_06') }}">Aluguel na Pandemia (Ciência de Dados)</a>
+                        </td>
+                        <td>1,5 pontos</td>
+                    </tr>
+                </tbody>
+            </table>        
+        </div>
+    </div>
+{% endblock %}

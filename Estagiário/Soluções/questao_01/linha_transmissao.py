@@ -12,8 +12,9 @@ def ColocarTorres(total_n):
             for _ in range(2, total_n):
                 fibonacci_list.append(fibonacci_list[-1] + fibonacci_list[-2])
 
-            #opção de retorno alternativa: "".join(list(map(lambda x: str(x), fibonacci_list)))
             return " ".join([str(i) for i in fibonacci_list]) 
+            #opção de retorno alternativa: "".join(list(map(lambda x: str(x), fibonacci_list)))
+            
         elif total_n >= 0:
             return 0
         else:
