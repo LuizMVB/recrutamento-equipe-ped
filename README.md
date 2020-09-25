@@ -6,4 +6,4 @@ Este repositório é referente ao processo seletivo que participei. As questões
 
 Objetiva-se ainda
 - converter as respostas para o formato de OOP
-- terminar as páginas isoladas de apresentação decada questão
+- terminar as páginas isoladas de apresentação de cada questão
